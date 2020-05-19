@@ -1,4 +1,4 @@
-resource "aws_cloudwatch_metric_alarm" "foobar" {
+resource "aws_cloudwatch_metric_alarm" "foobar.2" {
   alarm_name                = "terraform-test-foobar5"
   comparison_operator       = "GreaterThanOrEqualToThreshold"
   evaluation_periods        = "2"
@@ -11,7 +11,7 @@ resource "aws_cloudwatch_metric_alarm" "foobar" {
   insufficient_data_actions = []
 }
 
-resource "aws_cloudwatch_metric_alarm" "xx_anomaly_detection" {
+resource "aws_cloudwatch_metric_alarm" "xx_anomaly_detection.2" {
   alarm_name                = "terraform-test-foobar"
   comparison_operator       = "GreaterThanUpperThreshold"
   evaluation_periods        = "2"
